@@ -1,0 +1,92 @@
+@font-face{
+   font-family: houba-font;
+   src:url("../fonts/you-are-loved.ttf");
+}
+
+@font-face{
+	font-family: impact-font;
+	src:url("../fonts/impact.otf");
+}
+
+.impact {
+	font-family: impact-font;
+	font-size: 15px;
+}
+
+.houba {
+	font-family: houba-font;
+}
+
+.houba.f-heavy {
+	font-size: 36px;
+	/*color: #000;
+	text-shadow: #fff;*/
+}
+
+.navbar-custom.navbar-fixed-top li {
+	background: transparent;
+	border: 1px solid transparent; 
+	margin: 0 5px;
+}
+
+.navbar-custom.navbar-fixed-top.top-nav-collapse li {
+	background: transparent;
+	border: 1px solid transparent; 
+}
+
+.navbar-custom .lang-container {
+	display: inline-block;
+	padding: 10px;
+}
+
+.navbar-custom .btn-lang {
+	background:transparent;
+	border: 0;
+	font-size: 18px;
+}
+
+
+.navbar-custom {
+    /*background-color: rgba(0,0,0,0.1);*/
+	background-image: -webkit-linear-gradient(top, #333 0%, transparent 100%);
+	background-image: linear-gradient(to bottom, #333 0%, transparent 100%);
+	background-repeat: repeat-x;
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdfdfdf', GradientType=0);*/
+}
+
+
+
+
+
+.navbar-custom .btn-lang:active,.navbar-custom .btn-lang:focus {
+	outline: none;
+	}
+
+.intro {
+	background: #000 url("../img/frontband.jpg") no-repeat center center scroll;
+}
+
+
+.intro .intro-body {
+    vertical-align: bottom;
+    padding-bottom: 50px;
+}
+
+.btn-circle {
+	background-color: #000;
+	border: 2px solid #fff;
+}
+
+#social-buttons {
+	background-color: #222;
+	padding: 30px 15px;
+}
+
+#social-buttons a {
+	color: #b2d2f6;
+}
+
+section#merch {
+	background: url("../img/houba_transparent.png") no-repeat center center;
+}
+
