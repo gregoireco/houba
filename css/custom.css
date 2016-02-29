@@ -1,27 +1,42 @@
 @font-face{
-   font-family: houba-font;
-   src:url("../fonts/you-are-loved.ttf");
+   font-family: "houba-font";
+   src: url("../fonts/you-are-loved.ttf") format('truetype');
 }
 
 @font-face{
-	font-family: impact-font;
+	font-family: "impact-font";
 	src:url("../fonts/impact.otf");
 }
 
+@font-face{
+	font-family: "Anton", cursive;
+}
+
 .impact {
-	font-family: impact-font;
-	font-size: 15px;
+	font-family: Anton, sans-serif;
+	font-size: 18px;
 }
 
 .houba {
-	font-family: houba-font;
+	font-family: Anton;
 }
 
 .houba.f-heavy {
-	font-size: 36px;
+	font-size: 40px;
 	/*color: #000;
 	text-shadow: #fff;*/
 }
+
+a {
+	color: #999;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #CCC;
+}
+
 
 .navbar-custom.navbar-fixed-top li {
 	background: transparent;
@@ -55,9 +70,6 @@
 }
 
 
-
-
-
 .navbar-custom .btn-lang:active,.navbar-custom .btn-lang:focus {
 	outline: none;
 	}
@@ -72,6 +84,20 @@
     padding-bottom: 50px;
 }
 
+.btn-default {
+    border: 1px solid #aaa;
+    color: #aaa;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #BBB;
+    outline: 0;
+    color: #000;
+    background-color: #BBB;
+}
+
 .btn-circle {
 	background-color: #000;
 	border: 2px solid #fff;
@@ -83,7 +109,7 @@
 }
 
 #social-buttons a {
-	color: #b2d2f6;
+	color: #888 ;
 }
 
 section#merch {

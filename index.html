@@ -23,7 +23,10 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" >
-    <link href="http://fonts.googleapis.com/css?family=Khula" rel='stylesheet' type='text/css'>
+    <!--<link href="http://fonts.googleapis.com/css?family=Khula" rel='stylesheet' type='text/css'> -->
+    <!--<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -146,7 +149,7 @@
     <section id="shows" class="container content-section text-center">
         <div class="container">
                 <h2>Upcoming Shows</h2>
-				<a href="http://www.songkick.com/artists/478755" class="songkick-widget" data-theme="dark" data-detect-style="true" data-font-color="#FFFFFF" data-background-color="transparent">Houba tour dates</a>
+				<a href="http://www.songkick.com/artists/478755" class="songkick-widget" data-theme="dark" data-detect-style="true" data-background-color="transparent">Houba tour dates</a>
 				<script src="//widget.songkick.com/widget.js"></script>
         </div>
     </section>
@@ -154,27 +157,29 @@
     <!-- Booking Section -->
     <section id="booking" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Booking</h2>
-                <p><a href="mailto:houbasamb@gmail.com">houbasamb@gmail.com</a>
-                </p>
+            <h2>Booking</h2>
+            <div class="col-md-6">
+                <a href="mailto:houbasamb@gmail.com" class="btn btn-default btn-lg">Contact Olive</a>
+            </div>
+            <div class="col-md-6">
+                <a href="mailto:houbasamb@gmail.com" class="btn btn-default btn-lg">Technical Rider</a>
             </div>
         </div>
-    </section>
+    </section>  
 
     <!-- Photos Section -->
     <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
-    <section id="photos" class="container content-section text-center">
-        <div class="container">
+    <section id="photos" class="container-fluid content-section text-center">
+        <div class="container-fluid">
         <h2>Photos</h2>
-            <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+            <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel" width=1>
                 <div class="slides"></div>
                 <a class="prev">‹</a>
                 <a class="next">›</a>
                 <a class="play-pause"></a>
                 <ol class="indicator"></ol>
             </div>
-        </div>
+    </div>
         <div id="links">
             <a href="gallery/1.jpg" title="1"></a>
             <a href="gallery/2.jpg" title="2"></a>
@@ -204,9 +209,10 @@
     <script>
     blueimp.Gallery(
         document.getElementById('links').getElementsByTagName('a'),
-        {
+        option = {
             container: '#blueimp-gallery-carousel',
             carousel: true,
+            stretchImages: true,
         }
     );
     </script>
